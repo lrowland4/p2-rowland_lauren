@@ -32,4 +32,9 @@
 
 .hide {
   display: none;
-}s
+}
+
+.black {
+	color: #000000;
+	transition: all 1s;
+}
