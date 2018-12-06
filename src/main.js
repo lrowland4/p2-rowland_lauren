@@ -29,3 +29,14 @@ for(let i = 0; i < colorButtons.length; i++) {
 	colorButtons[i].addEventListener('click', wrapper);
 
 };
+
+
+/////////////////////////////////////////////
+
+const article = document.getElementsByTagName('article')[0];
+const section = document.getElementsByTagName('section')[0];
+
+section.addEventListener('click', function slideToggle(){
+  
+  article.classList.toggle('hide');
+});
