@@ -40,23 +40,3 @@
 	transition: all 1s;
 }
 
-.blacks {
-	color: #000000;
-	transition: all 1s;
-}
-
-#reds{
-	background-color: #db3236;
-}
-
-#yellows{
-	background-color: #F4D10D;
-}
-
-#greens{
-	background-color: #3cba54;
-}
-
-#blues{
-	background-color: #4885ed;
-}

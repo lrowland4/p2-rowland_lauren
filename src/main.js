@@ -1,12 +1,15 @@
-const colorButtons = document.querySelectorAll('#colors #rb #red, #colors #rb #blue, #colors #gy #yellow, #colors #gy #green, #numbers #starter #reds, #numbers #starter #blues, #numbers #alldone #greens, #numbers #alldone #greens');
-const colorList = document.querySelector('#colors');
+const colorButtons = document.querySelectorAll('#colors #rb #red, #colors #rb #blue, #colors #gy #yellow, #colors #gy #green, #numbers #starter #red, #numbers #starter #blue, #numbers #alldone #green, #numbers #alldone #yellow');
+const colorList = document.querySelector('.colors');
+const numberList = document.querySelector('#number');
 
 function wrapper(){
 
 	const changeColor = () => {
   	 colorList.classList.toggle('black');
+     numberList.classList.toggle('black');
 
   };
+
 
   const loopThrough = () => {
 
