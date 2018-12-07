@@ -2,37 +2,32 @@ const colorList = document.querySelector('#colors');
 const colorList2 = document.querySelector('#numbers');
 const colorList3 = document.querySelector('#numbers2');
 const colorButtons = document.querySelectorAll('#colors #rb #red, #colors #rb #blue, #colors #gy #yellow, #colors #gy #green');
-const colorButtons2 = document.querySelectorAll('#numbers #starter #red, #numbers #starter #blue, #numbers #alldone #green, #numbers #alldone #yellow');
-const colorButtons3 = document.querySelectorAll('#numbers2 #lastnum #red, #numbers2 #lastnum #blue, #numbers2 #finalnum #green, #numbers2 #finalnum #yellow');
+const colorButtons2 = document.querySelectorAll('#numbers #starter #red2, #numbers #starter #blue2, #numbers #alldone #green2, #numbers #alldone #yellow2');
+const colorButtons3 = document.querySelectorAll('#numbers2 #lastnum #red3, #numbers2 #lastnum #blue3, #numbers2 #finalnum #green3, #numbers2 #finalnum #yellow3');
 
 
 ///////////////////////////////////////
 
 
+const magicFortunes = ['It is certain.','It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Dont count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
 
-let fortuneOptions = ['You will be very rich.', 'You will be very poor.', 'You will have 10 children.', 'You will have 2 children.', 'You will marry someone famous.', 'You will live in a small house.', 'You will live in a Mansion.', 'You will soon come into a lot of money.', 'You will soon lose a lot of money.', 'You are admired by everyone.'];
-
-const choice = document.getElementsByClassName('choice') [0];
-const theFortune = document.querySelector('#numbers starter alldone');
+const button = document.getElementsByTagName('button')[0];
+const yourFortune = document.querySelector('#fortune-wrapper p span');
 
 const fortuneTextPlaceholder = document.createTextNode('');
 yourFortune.appendChild(fortuneTextPlaceholder);
 
 
-
-const choiceSelection = document.getElementById('generator-button');
-
-
-let fortuneTeller = function() {
+let shakeBall = function() {
   
-  fortuneOptions.sort(function(a, b){return 0.5 - Math.random()});
+  magicFortunes.sort(function(a, b){return 0.5 - Math.random()});
 
-  var fortuneText = document.createTextNode(fortuneOptions[0]);
-    fortuneTextPlaceholder.appendChild(fortuneText);
+  let fortuneText = document.createTextNode(magicFortunes[0]);
+    yourFortune.appendChild(fortuneText);
 
     ourButtonSection.removeChild(button);
 
-    theFortune.classList.add('fortune-show');
+    yourFortune.classList.add('fortune-show');
 
 
 };
@@ -41,7 +36,11 @@ let fortuneTeller = function() {
 
 
 
-button.onclick = fortuneTeller;
+button.onclick = shakeBall;
+
+
+
+
 
 
 
@@ -146,7 +145,7 @@ function wrapper3(){
     setTimeout(function() {
      colorList3.classList.add('hide');
      colorList3.classList.remove('show');
-     fortuneOptions.classList.add('slide-in');
+     shakeBall.classList.add('slide-in');
    }, numberValue * 1000);
 
 

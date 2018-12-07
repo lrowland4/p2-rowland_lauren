@@ -44,3 +44,46 @@
 	transition: all 1s;
 }
 
+.fortune-show {
+	opacity: 1 !important;
+	transition: all 3s;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+
+
+
+
+#red2{
+	background-color: #db3236;
+}
+
+#yellow2{
+	background-color: #F4D10D;
+}
+
+#green2{
+	background-color: #3cba54;
+}
+
+#blue2{
+	background-color: #4885ed;
+}
+
+#red3{
+	background-color: #db3236;
+}
+
+#yellow3{
+	background-color: #F4D10D;
+}
+
+#green3{
+	background-color: #3cba54;
+}
+
+#blue3{
+	background-color: #4885ed;
+}
+
