@@ -9,7 +9,7 @@ const colorButtons3 = document.querySelectorAll('#numbers2 #lastnum #red3, #numb
 ///////////////////////////////////////
 
 
-const theFortunes = ['It is certain.','It is decidedly so.', 'Without a doubt.', 'Yes - definitely.', 'You may rely on it.', 'As I see it, yes.', 'Most likely.', 'Outlook good.', 'Yes.', 'Signs point to yes.', 'Reply hazy, try again', 'Ask again later.', 'Better not tell you now.', 'Cannot predict now.', 'Concentrate and ask again.', 'Dont count on it.', 'My reply is no.', 'My sources say no.', 'Outlook not so good.', 'Very doubtful.'];
+const theFortunes = ['You will be very rich.', 'You will be very poor.', 'You will have 10 children.', 'You will have 2 children.', 'You will marry someone famous.', 'You will live in a small house.', 'You will live in a Mansion.', 'You will soon come into a lot of money.', 'You will soon lose a lot of money.', 'You are admired by everyone.'];
 
 const button = document.getElementsByTagName('button')[0];
 const yourFortune = document.querySelector('#fortune-wrapper p span');
@@ -18,17 +18,10 @@ const fortuneTextPlaceholder = document.createTextNode('');
 yourFortune.appendChild(fortuneTextPlaceholder);
 
 
-let fortuneTeller = function() {
-  
-  theFortunes.sort(function(a, b){return 0.5 - Math.random()});
+theFortunes.sort(function(a, b){return 0.5 - Math.random()});
 
   let fortuneText = document.createTextNode(theFortunes[0]);
     yourFortune.appendChild(fortuneText);
-
-    ourButtonSection.removeChild(button);
-
-
-};
 
 
 
@@ -133,7 +126,7 @@ function wrapper3(){
     setTimeout(function() {
      colorList3.classList.add('hide');
      colorList3.classList.remove('show');
-     fortuneTeller.classList.add('fortune-show');
+     yourFortune.classList.add('fortune-show');
    }, numberValue * 1000);
 
 

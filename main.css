@@ -12,6 +12,7 @@
 	line-height: 150px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+
 }
 
 #red{
@@ -47,13 +48,18 @@
 .fortune-show {
 	opacity: 1 !important;
 	transition: all 3s;
+	text-align: center;
 	color: #ffffff;
 	background-color: #000000;
+	padding: 5%;
+	line-height: 150px;
+	font-size: 3rem;
+
 }
 
-
-
-
+p{
+	margin-top: 100px;
+}
 
 #red2{
 	background-color: #db3236;
