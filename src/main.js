@@ -6,8 +6,6 @@ const colorButtons2 = document.querySelectorAll('#numbers #starter #red, #number
 const colorButtons3 = document.querySelectorAll('#numbers2 #lastnum #red, #numbers2 #lastnum #blue, #numbers2 #finalnum #green, #numbers2 #finalnum #yellow');
 
 
-
-
 function wrapper(){
 
 	const changeColor = () => {
@@ -26,9 +24,17 @@ function wrapper(){
     for (let i = 0; i < thisButtonLength * 2; i++) {
       setTimeout(function() {
       	changeColor();
-       }, i * 1000);
+       }, i * 500);
 
     }
+
+    setTimeout(function() {
+     colorList.classList.add('hide');
+     colorList2.classList.remove('hide');
+     colorList2.classList.add('show');
+   }, thisButtonLength * 1000);
+
+
 
   };
   loopThrough();
