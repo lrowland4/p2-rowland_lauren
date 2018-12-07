@@ -7,5 +7,9 @@ i. Issues:
 
 ii. Resources:
 
--W3Schools
+-W3Schools:
+	-https://www.w3schools.com/js/js_arrays.asp
+	-https://www.w3schools.com/css/css_border.asp
+-Bootstrap:
+	-https://getbootstrap.com/docs/4.1/layout/overview/
 -Lectures
