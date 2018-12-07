@@ -35,6 +35,10 @@
   display: none;
 }
 
+.show{
+	display: block;
+}
+
 .black {
 	color: #000000;
 	transition: all 1s;
